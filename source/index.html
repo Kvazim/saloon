@@ -21,17 +21,19 @@
 
   <header class="page-header page-header--nojs">
 
-    <div class="page-header-wrapper">
-      <div class="page-header__info">
+    <button class="page-header__toggle toggle" type="button" aria-label="Открыть/скрыть меню.">
+      <span class="toggle__bar"></span>
+    </button>
+
         <a class="page-header__logo" href="./" aria-current="page">
           <picture>
             <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
             <img class="page-header__icon" src="./img/logo-mobile.svg" width="32" height="36"
-              alt="Логотип магазина, DRINK2GO.">
+              alt="Логотип салона, Гамма красоты.">
           </picture>
         </a>
-      </div>
+
 
       <nav class="navigation navigation--close navigation--nojs">
         <div class="navigation__wrapper">
@@ -51,14 +53,43 @@
           </ul>
         </div>
 
-        <button class="navigation__toggle toggle" type="button" aria-label="Открыть/скрыть меню.">
-          <span class="toggle__bar"></span>
-        </button>
+        <ul class="navigation__phone phone">
+          <li class="phone__item">
+            <a class="phone__link" href="tel:+74959116666">8(495)911-66-66</a>
+          </li>
+          <li class="phone__item">
+            <a class="phone__link" href="tel:+79160164099">8(916)016-40-99</a>
+          </li>
+        </ul>
+
+        <ul class="navigation__city city">
+          <li class="city__list">
+            <a class="city__link city__link--activ" href="#">Москва</a>
+          </li>
+          <li class="city__list">
+            <a class="city__link" href="#">Домодедово</a>
+          </li>
+          <li class="city__list">
+            <a class="city__link" href="#">Тверь</a>
+          </li>
+          <li class="city__list">
+            <a class="city__link" href="#">Рязань</a>
+          </li>
+          <li class="city__list">
+            <a class="city__link" href="#">Казань</a>
+          </li>
+        </ul>
+
       </nav>
-    </div>
   </header>
 
   <main class="page-main">
+    <h1 class="visually-hidden">Салон парикхмахерская, Гамма красоты</h1>
+    <section class="promo">
+      <img src="promo__image" alt="Гамма красоты.">
+      <i class="promo__title">Сеть парикмахерских</i>
+      <p class="promo__subtitle">Полный спектр услуг <b>по демократичной цене</b></p>
+    </section>
 
   </main>
 
@@ -66,7 +97,7 @@
 
   </footer>
   <script src="./leaflet/leaflet.js"></script>
-  <script src="js/script.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
