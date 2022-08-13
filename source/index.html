@@ -1444,6 +1444,8 @@
           <label class="visually-hidden" for="contacts">Введите Ваш номер телефона или адрес электронной почты</label>
           <input id="contacts" name="contacts" type="text" placeholder="Телефон или e-mail" required>
         </fieldset>
+        <button class="ad-form__button" type="submit">отправить</button>
+        <span class="ad-form__description">Мы благодарны за проявленный интерес к нашему салону и очень ценим Ваше мнение и время. Мы направим Вам ответ в течении 24 часов</span>
       </form>
     </section>
 
@@ -1452,6 +1454,22 @@
   <footer class="page-footer">
 
   </footer>
+
+  <!-- Сообщение об успешном создании объявления -->
+  <template id="success">
+    <div class="success">
+      <p class="success__message">Спасибо за вашу заявку</p>
+    </div>
+  </template>
+
+    <!-- Сообщение об ошибке создания объявления -->
+    <template id="error">
+      <div class="error">
+        <p class="error__message">Ошибка размещения объявления</p>
+        <button type="button" class="error__button">Попробовать снова</button>
+      </div>
+    </template>
+
   <script src="./leaflet/leaflet.js"></script>
   <script src="js/script.js" type="module"></script>
 </body>
