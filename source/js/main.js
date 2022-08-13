@@ -6,7 +6,6 @@ const slideItem = document.querySelectorAll('.slider');
 const mapNojs = document.querySelector('.map');
 const mapCanvas = document.querySelector('.map__canvas');
 
-let i = 0;
 const ZOOM_MAP = 17;
 const CENTER_MAP = {
   lat: 59.96832,
