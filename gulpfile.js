@@ -21,9 +21,9 @@ export const styles = () => {
     .pipe(less())
     .pipe(postcss([
       autoprefixer(),
-      csso()
+      // csso()
     ]))
-    .pipe(rename('style.min.css'))
+    // .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -33,7 +33,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: false }))
     .pipe(gulp.dest('build'));
 }
 
